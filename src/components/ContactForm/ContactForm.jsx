@@ -34,16 +34,32 @@ export default function ContactForm({ onAdd }) {
     >
       <Form className={css.form}>
         <div className={css.field}>
-          <label className={css.label}>Name</label>
-          <Field className={css.input} type="text" name="name"></Field>
+          <label className={css.label} htmlFor="name">
+            Name
+          </label>
+          <Field
+            className={css.input}
+            type="text"
+            name="name"
+            id="name"
+            autoComplete="off"
+          ></Field>
           <ErrorMessage name="name">
             {(msg) => <span className={css.msg}>{msg}</span>}
           </ErrorMessage>
         </div>
 
         <div className={css.field}>
-          <label className={css.label}>Number</label>
-          <Field className={css.input} type="tel" name="number"></Field>
+          <label className={css.label} htmlFor="number">
+            Number
+          </label>
+          <Field
+            className={css.input}
+            type="tel"
+            name="number"
+            id="number"
+            autoComplete="off"
+          ></Field>
           <ErrorMessage name="number">
             {(msg) => <span className={css.msg}>{msg}</span>}
           </ErrorMessage>
