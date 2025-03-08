@@ -9,6 +9,9 @@
   min-width: 380px;
   margin-bottom: 18px;
   background-color: #e4ebf5;
+  @media screen and (max-width: 400px) {
+    min-width: 300px;
+  }
 }
 .label {
   font-weight: bold;
